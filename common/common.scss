@@ -1,0 +1,261 @@
+//use Roboto font
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body input,
+body button,
+body select,
+body textarea {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+
+@mixin boxShadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+}
+
+@mixin buttonShadow {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+//raise and round buttons
+.btn {
+  border-radius: 2px;
+  @include boxShadow;
+}
+
+//remove shadow from a few buttons
+.d-editor-button-bar .btn,
+.bulk-select-all,
+.bulk-clear-all,
+.period-chooser-header,
+.topic-map .btn.no-text,
+.badge-section .btn,
+#revision .btn,
+#new-account-link,
+#login-link {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+// CUSTOM STYLES
+// CUSTOM STYLES
+// CUSTOM STYLES
+// CUSTOM STYLES
+.d-header {
+    background-color: #fff;
+    box-shadow: none;
+}
+.d-header .title a {
+    color: #000 !important;
+}
+body {
+    background-color: #f6f6f6;
+}
+.d-header-icons .d-icon {
+color: #00801f !important;
+}
+.category-list, .topic-list, .latest-topic-list {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+.category-list tbody tr:hover {
+    background: #fff;
+}
+.nav-pills>li {
+    font-weight: bold;
+}
+.nav-pills>li.active>a, 
+.nav-pills>li>a.active {
+    border-bottom-color: #00801f !important;
+    background-color: transparent !important;
+    color: #00801f !important;
+    text-transform: lowercase;
+}
+.nav-pills>li>a, 
+.nav-pills>li>a:hover {
+    background: transparent !important;
+        text-transform: lowercase;
+}
+.list-controls .combo-box .combo-box-header {
+    border: 2px solid #d8d8d8 !important;
+    border-radius: 20px;
+    color: #00801f;
+}
+.select-kit.combo-box .select-kit-header,
+.select-kit.combo-box .select-kit-header.is-focused {
+    box-shadow: none;
+    padding: 3px 14px;
+    background: transparent;
+    font-size: 16px;
+}
+.select-kit .select-kit-header .caret-icon {display: none;}
+.d-header:after {
+  content: '';
+  height: 5px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to right,
+    #e41e0a 0,
+    #e41e0a 27%,
+    #201c17 27%,
+    #201c17 32%,
+    #f39100 32%,
+    #f39100 57%,
+    #cc0b18 57%,
+    #cc0b18 73%,
+    #0077bd 73%,
+    #0077bd 77%,
+    #18a035 77%,
+    #18a035 100%
+  );
+}
+
+
+
+.menu-panel {
+    border: 0;
+    box-shadow: none;
+    background-color: #fff;
+    padding: 0.5em;
+}
+.menu-panel .categories-link,
+.menu-links li a {
+     color: #00801f;
+      font-weight: bold;
+}
+.menu-panel li a.widget-link:hover, 
+.menu-panel li a.widget-link:focus, 
+.menu-panel li.heading a.widget-link:hover, 
+.menu-panel li.heading a.widget-link:focus {
+    background: transparent;
+}
+.menu-panel hr {
+    border-top: 2px solid #e9e9e9;
+}
+.d-header-icons .icon,
+.d-header-icons .icon:hover, 
+.d-header-icons .icon:focus,
+.drop-down-mode .d-header-icons .active .icon {
+    position: relative;
+    background-color: transparent;
+    cursor: default;
+    border:0;
+}
+
+
+// MODAL
+// MODAL
+// MODAL
+// MODAL 
+.create-account.in .modal-inner-container, 
+.login-modal.in .modal-inner-container {
+    position: relative;
+}
+.modal-header:after {
+  content: '';
+  height: 5px;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to right,
+    #e41e0a 0,
+    #e41e0a 27%,
+    #201c17 27%,
+    #201c17 32%,
+    #f39100 32%,
+    #f39100 57%,
+    #cc0b18 57%,
+    #cc0b18 73%,
+    #0077bd 73%,
+    #0077bd 77%,
+    #18a035 77%,
+    #18a035 100%
+  );
+}
+    
+
+.modal-header {
+    padding: 20px 25px 0px 25px;
+}
+.modal-footer {
+    padding: 0px 25px 20px 25px;
+}
+.modal-header,
+.modal-footer {
+    border: 0;
+}
+
+
+
+// BUTTON
+// BUTTON
+// BUTTON
+.btn-primary {
+    min-height: 25px;
+}
+.btn {
+    border-radius: 20px;
+    box-shadow: none;
+}
+.login-with-email-button {
+    background: transparent;
+    border: 2px solid #e9e9e9;
+    color: #00801f;
+    font-weight: bold;
+    padding: 10px 12px;
+}
+.login-with-email-button svg {
+    display: none;
+}
+.modal-footer #login-button svg {
+    display: none;
+}
+.modal-footer #login-button {
+    background: #00801f;
+    text-transform: lowercase;
+}
+.header-buttons .login-button {
+    background: #00801f;
+    text-transform: lowercase;
+    padding: 3px 14px;
+}
+.header-buttons .login-button svg {
+    display: none;
+}
+
+
+
+// INPUT
+// INPUT
+// INPUT
+// INPUT
+
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], input[type="month"], input[type="time"], 
+input[type="week"], input[type="number"], input[type="email"], 
+input[type="url"], input[type="search"], 
+input[type="tel"], input[type="color"] {
+    border: 2px solid #e9e9e9;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #e9e9e9;
+    box-shadow:none;
+    outline: none;
+}
